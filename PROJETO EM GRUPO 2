@@ -1,0 +1,86 @@
+    COLOCAR DENTRO DO BODY
+    
+    <div class="principal">
+        <div class="navbar">
+            <img src="Imagens/logo.png" class="logo">
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Bebidas</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#" id="contatos">Contatos</a></li>
+                </ul>
+            </div>
+        </div
+        
+        
+        
+   CSS
+        
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.principal{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Imagens/fundo.png);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+
+.logo{
+    width: 105px;
+    cursor: pointer;
+}
+
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    flex: 1;
+    text-align: right;
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 120px;
+    color: greenyellow;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    cursor: default;
+    transition: all 300ms ease;
+}
+
+.nav ul li a:hover{
+    color: red;
+}
+
+#contatos{
+    background-color: #5065d5;
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+
+#contatos:hover{
+    box-shadow: 0 0.5rem 1rem black;
+}
